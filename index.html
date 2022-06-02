@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Imtihon</title>
+</head>
+<body class="site-body">
+    
+ 
+<div class="container">
+    <h2 class="h1 text-center my-5 text-danger">Welcome to search site</h2>
+
+    <!-- Search input  -->
+    <form class="form d-flex gap-3 justify-content-center mb-5">
+        <input class="search-input form-control w-25 border border-success rounded-pill border-3" type="search" placeholder="Search">
+    </form>
+
+    <ul class="row g-4 list-inline" id="wrapper">
+
+    </ul>
+    
+    <!-- Modal -->
+    <div class="modal fade  " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <!-- Modal list  -->
+          <ul class="modal-body list-inline">
+           
+          </ul>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- TEMPLATE  -->
+
+<template id="template">
+    <li class="col-4 list-item">
+        <div class="card h-100 bg-light">
+          <img  class="card-img-top">
+          <div class="card-body d-flex flex-column justify-content-center">
+            <h5 class="card-title text-center mb-2">Movies name</h5>
+            <p class="card-text text-center mb-2 fw-bolder">Author</p>
+            <span class="movies-time d-block text-center mb-2 fw-bolder text-warning">2022.07.03</span>
+        </div>
+        <button class="more-button btn btn-success d-flex justify-content-center mx-4 mb-4 fw-bold" data-bs-toggle="modal" data-bs-target="#staticBackdrop">More info</button>
+        </div>
+      </li>
+</template>
+
+<!-- TEMPLATE MODAL  -->
+
+<template id="new-template">
+    <li class="modal-item card-body mb-2 border-2 border border-danger rounded-3">
+        <h2 class="modal-author h4 text-primary mb-1">author</h2>
+        <p class="modal-title h6">title</p>
+        <p class="modal-text">author</p>
+      </li>
+</template>
+
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

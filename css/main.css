@@ -1,0 +1,25 @@
+.site-body{
+    background-image: url(../images/images.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.search-btn:hover{
+    background: chartreuse;
+    border-color: chartreuse;
+    color: grey;
+}
+
+.more-button:hover{
+    
+    color: grey;
+    background: chartreuse;
+    border-color: chartreuse;
+}
+.btn-group{
+    display: flex;
+    position: absolute;
+    left: 87%;
+    top: 9%;
+}
+
