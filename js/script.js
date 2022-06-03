@@ -33,7 +33,7 @@ elForm.addEventListener("input", (evt) =>{
     if (inputValue) {
            (async function () {
                let responce = await fetch(
-                   `https://newsapi.org/v2/everything?q=${inputValue}&from=2022-05-02&sortBy=publishedAt&apiKey=e08ec6ad52214483904ce810eae6a365`
+                   `https://newsapi.org/v2/everything?q=${inputValue}&from=2022-06-02&sortBy=popularity&apiKey=72c46977680a4705a32815a1056a579b`
                    );
                    let data = await responce.json();
                    renderFetch(data, elWrapper)
@@ -61,11 +61,11 @@ elForm.addEventListener("input", (evt) =>{
         
         // More infoga render qilishni eshitish
     elWrapper.addEventListener("click", () =>{
-        let inputValue = elSearchInput.value;
+        let inputValue = elSearchInput.value; 
         if(inputValue){
             (async function () {
                 let responce = await fetch(
-                    `https://newsapi.org/v2/everything?q=${inputValue}&from=2022-05-02&sortBy=publishedAt&apiKey=e08ec6ad52214483904ce810eae6a365`
+                    `https://newsapi.org/v2/everything?q=${inputValue}&from=2022-06-02&sortBy=popularity&apiKey=72c46977680a4705a32815a1056a579b`
                     );
                     let data = await responce.json();
                     console.log(data);
